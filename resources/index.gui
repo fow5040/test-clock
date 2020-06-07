@@ -4,14 +4,14 @@
   </defs>
 
   <line x1="0" y1="50%-1" x2="15%" y2="50%-1" fill="red" stroke-width="2" />
-  <line x1="65%" y1="50%-1" x2="100%" y2="50%-1" fill="red" stroke-width="2" />
-  <rect x="75%-1" y="50%-14" width="31" height="27" fill="red"/>
-  <rect x="75%" y="50%-13" width="29" height="25" fill="black"/>
+  <line x1="70%" y1="50%-1" x2="100%" y2="50%-1" fill="red" stroke-width="2" />
+  <rect x="80%-1" y="50%-15" width="36" height="29" fill="red"/>
+  <rect x="80%" y="50%-14" width="34" height="27" fill="black"/>
 
-  <text id="seconds" x="75%+3" y="50%+6" 
-        fill="darkgrey" font-size="20">00</text>
+  <text id="seconds" x="80%+17" y="50%+7" 
+        fill="darkgrey" class="second">00</text>
 
-  <g id="clock_group" transform="translate(80%,50%+5)">
+  <g id="clock_group" transform="translate(100%,50%+5)">
     <g id="seconds_group">
       <text class="seconds" x="0" y="0">00</text>
       <text class="seconds" x="0" y="0">05</text>
@@ -27,7 +27,7 @@
       <text class="seconds" x="0" y="0">55</text>
     </g>
 
-    <g id="minutes_group">
+    <g id="minutes_group" transform="translate(10%,0)">
       <text class="minutes" x="0" y="0">00</text>
       <text class="minutes" x="0" y="0">05</text>
       <text class="minutes" x="0" y="0">10</text>

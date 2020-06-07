@@ -6,28 +6,40 @@
   fill: white;
 }
 
-.seconds {
+.second {
   font-size: 24;
   font-family: System-Regular;
   font-weight: regular;
   text-length: 2;
-  fill: grey;
+  text-anchor: middle;
+  fill: darkgrey;
+}
+
+.seconds {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 2;
+  fill: darkgrey;
+  text-anchor: middle;
   opacity: 0;
 }
 
 .minutes {
-  font-size: 36;
+  font-size: 44;
   font-family: System-Regular;
   font-weight: light;
   text-length: 2;
+  text-anchor: middle;
   fill: darkgrey;
 }
 
 .hours {
-  font-size: 48;
+  font-size: 66;
   font-family: System-Regular;
   font-weight: bold;
   text-length: 2;
+  text-anchor: middle;
   fill: white;
 }
 

@@ -1,5 +1,9 @@
 import clock from "clock";
 import document from "document";
+import { me as device } from "device";
+
+//For proper fitbit spacing
+if (!device.screen) device.screen = { width: 348, height: 250 };
 
 // Update the clock every second
 clock.granularity = "seconds";
@@ -8,6 +12,9 @@ let seconds_group = document.getElementById('seconds_group');
 let minutes_group = document.getElementById('minutes_group');
 let hours_group = document.getElementById('hours_group');
 let seconds = document.getElementById("seconds");
+
+let hourRadius = device.screen.width * .70;
+let minuteRadius = device.screen.width * .53;
 
 let getMinSecX = (val,radius) => radius * Math.cos(Math.PI * val / 30 + .98*Math.PI);
 let getMinSecY = (val,radius) => radius * Math.sin(Math.PI * val / 30 + .98*Math.PI);
@@ -27,11 +34,11 @@ function updateClock(evt) {
     //seconds_group.children[ind].x = getMinSecX(ind*5 - secs, 50);
     //seconds_group.children[ind].y = getMinSecY(ind*5 - secs, 50);
 
-    minutes_group.children[ind].x = getMinSecX(ind*5 - mins, 100);
-    minutes_group.children[ind].y = getMinSecY(ind*5 - mins, 100);
+    minutes_group.children[ind].x = getMinSecX(ind*5 - mins, minuteRadius);
+    minutes_group.children[ind].y = getMinSecY(ind*5 - mins, minuteRadius);
     
-    hours_group.children[ind].x = getHourX(ind - hours - mins/60, 170);
-    hours_group.children[ind].y = getHourY(ind - hours - mins/60, 170);
+    hours_group.children[ind].x = getHourX(ind - hours - mins/60, hourRadius);
+    hours_group.children[ind].y = getHourY(ind - hours - mins/60, hourRadius);
   }
 
   seconds.text = secs < 10 ? '0' + secs : secs;
