@@ -4,11 +4,11 @@
   "private": true,
   "license": "UNLICENSED",
   "devDependencies": {
-    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk": "^4.1.0",
     "@fitbit/sdk-cli": "^1.7.1"
   },
   "fitbit": {
-    "appUUID": "309ce13f-8ded-4a03-8e56-db6f751e7dff",
+    "appUUID": "42be7709-bdfe-4074-86f2-49dd5291d544",
     "appType": "clockface",
     "appDisplayName": "Test Clock",
     "iconFile": "resources/icon.png",

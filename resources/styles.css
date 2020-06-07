@@ -3,6 +3,32 @@
   font-family: System-Regular;
   font-weight: regular;
   text-length: 32;
+  fill: white;
+}
+
+.seconds {
+  font-size: 24;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 2;
+  fill: grey;
+  opacity: 0;
+}
+
+.minutes {
+  font-size: 36;
+  font-family: System-Regular;
+  font-weight: light;
+  text-length: 2;
+  fill: darkgrey;
+}
+
+.hours {
+  font-size: 48;
+  font-family: System-Regular;
+  font-weight: bold;
+  text-length: 2;
+  fill: white;
 }
 
 #background {
