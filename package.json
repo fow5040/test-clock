@@ -1,5 +1,5 @@
 {
-  "name": "test-clock",
+  "name": "fix-bit",
   "version": "0.1.0",
   "private": true,
   "license": "UNLICENSED",
@@ -10,7 +10,7 @@
   "fitbit": {
     "appUUID": "42be7709-bdfe-4074-86f2-49dd5291d544",
     "appType": "clockface",
-    "appDisplayName": "Test Clock",
+    "appDisplayName": "FixBit",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "requestedPermissions": [],

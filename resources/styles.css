@@ -1,3 +1,7 @@
+.colored-line {
+  fill: red;
+}
+
 .defaultText {
   font-size: 32;
   font-family: System-Regular;
@@ -13,16 +17,6 @@
   text-length: 2;
   text-anchor: middle;
   fill: darkgrey;
-}
-
-.seconds {
-  font-size: 32;
-  font-family: System-Regular;
-  font-weight: regular;
-  text-length: 2;
-  fill: darkgrey;
-  text-anchor: middle;
-  opacity: 0;
 }
 
 .minutes {
