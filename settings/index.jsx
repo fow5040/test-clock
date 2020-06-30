@@ -1,3 +1,20 @@
+const colorSet = [
+  {color: "magenta"},
+  {color: "red"},
+  {color: "orangered"},
+  {color: "lime"},
+  {color: "green"},
+  {color: "aqua"},
+  {color: "blue"},
+  {color: "indigo"},
+  {color: "purple"},
+  {color: "plum"},
+  {color: "lightseagreen"},
+  {color: "white"},
+  {color: "oldlace"},
+  {color: "whitesmoke"}
+];
+
 function settingsComponent(props) {
   return (
     <Page>
@@ -17,14 +34,7 @@ function settingsComponent(props) {
         <ColorSelect
           settingsKey="indicator.color"
           label="yolo"
-          colors={[
-            {color: 'red'},
-            {color: 'sandybrown'},
-            {color: 'gold'},
-            {color: 'aquamarine'},
-            {color: 'deepskyblue'},
-            {color: 'plum'}
-          ]}>/</ColorSelect> 
+          colors={colorSet} /> 
         <Toggle
           settingsKey="indicator.seconds"
           label="Show seconds indicator?"
